@@ -14,7 +14,7 @@ EXPMatcherImplementationBegin(complete, ()) {
     __block BOOL isComplete = NO;
     __block NSError *signalError;
 
-    if ([actual isKindOfClass:[RACSignal class]]) {
+    if ([actual respondsToSelector:@selector(subscribeError:completed:)]) {
         signal = actual;
 
         [signal subscribeError:^(NSError *error) {
