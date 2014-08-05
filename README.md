@@ -37,7 +37,7 @@ describe(@"a coupon manager", ^{
 
 ```ruby
 target 'PalaverTests' do
-  pod 'Expecta+ReactiveCocoa'
+  pod 'Expecta+ReactiveCocoa', :git => 'https://github.com/kylef/Expecta-ReactiveCocoa.git'
 end
 ```
 
