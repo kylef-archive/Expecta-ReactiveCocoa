@@ -9,3 +9,4 @@
 #import <Expecta/Expecta.h>
 
 EXPMatcherInterface(complete, ())
+EXPMatcherInterface(completeSending, (NSArray *values))

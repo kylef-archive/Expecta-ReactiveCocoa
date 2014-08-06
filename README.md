@@ -5,6 +5,7 @@ Expecta+ReactiveCocoa provides a set of matchers for using Expecta with
 ReactiveCocoa. Providing the following matchers:
 
 - `expect(signal).will.complete()`
+- `expect(signal).will.completeSending(@[@YES, @NO, @YES])`
 - `expect(signal).will.error()`
 
 ### Usage
@@ -26,7 +27,7 @@ describe(@"a coupon manager", ^{
      });
 
     it(@"should fail with an invalid coupon code", ^{
-       RACSignal *signal = [manager redeemCoupon:@"XAXAXA"];
+       RACSignal *signal = [manager redeemCoupon:@"INVALID"];
        expect(signal).will.error();
     });
   });
