@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'Expecta+ReactiveCocoa'
-  spec.version = '0.1.0'
+  spec.version = '0.2.0'
   spec.summary = 'Expecta matchers for ReactiveCocoa.'
   spec.homepage = 'https://github.com/kylef/Expecta-ReactiveCocoa'
   spec.license = { :type => 'BSD', :file => 'LICENSE' }
