@@ -10,7 +10,8 @@ Pod::Spec.new do |spec|
   spec.source_files  = 'ExpectaReactiveCocoa/*.{h,m}'
   spec.requires_arc = true
   spec.dependency 'Expecta'
-  spec.dependency 'ReactiveCocoa'
+  # Disabled to work around https://github.com/CocoaPods/CocoaPods/issues/2428
+  # spec.dependency 'ReactiveCocoa'
 
   spec.ios.deployment_target = '5.0'
   spec.osx.deployment_target = '10.7'
