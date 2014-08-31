@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'Expecta+ReactiveCocoa'
-  spec.version = '0.2.0'
+  spec.version = '0.2.1'
   spec.summary = 'Expecta matchers for ReactiveCocoa.'
   spec.homepage = 'https://github.com/kylef/Expecta-ReactiveCocoa'
   spec.license = { :type => 'BSD', :file => 'LICENSE' }
@@ -10,7 +10,8 @@ Pod::Spec.new do |spec|
   spec.source_files  = 'ExpectaReactiveCocoa/*.{h,m}'
   spec.requires_arc = true
   spec.dependency 'Expecta'
-  spec.dependency 'ReactiveCocoa'
+  # Disabled due to https://github.com/CocoaPods/Core/issues/150#issuecomment-51318587
+  #spec.dependency 'ReactiveCocoa'
 
   spec.ios.deployment_target = '5.0'
   spec.osx.deployment_target = '10.7'
