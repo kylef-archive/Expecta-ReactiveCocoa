@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'Expecta'
   spec.dependency 'ReactiveCocoa'
 
-  spec.ios.deployment_target = '5.0'
+  spec.ios.deployment_target = '6.0'
   spec.osx.deployment_target = '10.7'
 end
 
